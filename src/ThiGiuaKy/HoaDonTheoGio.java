@@ -29,7 +29,7 @@ public class HoaDonTheoGio extends HoaDon {
 
     protected void setSoGioThue(int soGioThue) {
         if (soGioThue > 30)
-            System.out.println("So gio thue da vuot 30 tieng, hay su dung loai hoa don nay.");
+            System.out.println("So gio thue da vuot 30 tieng, khong the su dung loai hoa don nay.");
         else
             this.soGioThue = soGioThue;
     }
