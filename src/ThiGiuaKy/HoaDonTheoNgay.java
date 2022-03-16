@@ -14,8 +14,15 @@ public class HoaDonTheoNgay extends HoaDon {
         return soNgayThue * donGia;
     }
 
-    public HoaDonTheoNgay(int soNgayThue) {
+    public int getSoNgayThue() {
+        return soNgayThue;
+    }
+
+    public void setSoNgayThue(int soNgayThue) {
         this.soNgayThue = soNgayThue;
+    }
+
+    public HoaDonTheoNgay() {
         list.add(this);
     }
 

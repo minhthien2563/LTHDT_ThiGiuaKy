@@ -9,9 +9,6 @@ public class HoaDonTheoGio extends HoaDon {
     private static List<HoaDonTheoGio> list = new ArrayList<HoaDonTheoGio>();
 
     protected int thanhTien(int soGioThue, int donGia) {
-        if (soGioThue > 30)
-            System.out.println("So gio thue da vuot 30 tieng, hay su dung loai hoa don nay.");
-    
         if (soGioThue > 24 || soGioThue < 30)
             soGioThue = 24;
 
@@ -24,6 +21,17 @@ public class HoaDonTheoGio extends HoaDon {
 
     HoaDonTheoGio() {
         list.add(this);
+    }
+
+    protected int getSoGioThue() {
+        return soGioThue;
+    }
+
+    protected void setSoGioThue(int soGioThue) {
+        if (soGioThue > 30)
+            System.out.println("So gio thue da vuot 30 tieng, hay su dung loai hoa don nay.");
+        else
+            this.soGioThue = soGioThue;
     }
 
     public static List<HoaDonTheoGio> getList() {
