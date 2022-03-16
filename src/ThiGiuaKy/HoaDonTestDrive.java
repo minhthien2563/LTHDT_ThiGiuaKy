@@ -20,12 +20,11 @@ public class HoaDonTestDrive {
         
         SimpleDateFormat ngaySoSanh = new SimpleDateFormat("MM/yyyy");
         int tongSoTien = 0;
-        ((HoaDonTheoGio) hoaDonTheoGio).setSoGioThue(5);
 
         for (HoaDonTheoGio i : HoaDonTheoGio.getList()) {
             if (ngaySoSanh.format(i.getNgayHoaDon()).equals("09/2013") ) {
                 System.out.println(ngaySoSanh.format(i.getNgayHoaDon()));
-                tongSoTien += i.thanhTien(, donGia)
+                tongSoTien += i.thanhTien(5, 1000);
             }
         }
         System.out.println(tongSoTien);
