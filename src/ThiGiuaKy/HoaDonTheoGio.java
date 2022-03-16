@@ -34,7 +34,7 @@ public class HoaDonTheoGio extends HoaDon {
             this.soGioThue = soGioThue;
     }
 
-    public static List<HoaDonTheoGio> getList() {
+    public static List<HoaDonTheoGio> getListHoaDonTheoGio() {
         return list;
     }
 
@@ -42,5 +42,10 @@ public class HoaDonTheoGio extends HoaDon {
         return list.size();
     }
 
-    
+    @Override
+    public void nhapHoaDon() throws Exception {
+        super.nhapHoaDon();
+        System.out.print("Hay nhap so gio thue: ");
+        setSoGioThue(input.nextInt());
+    }
 }
